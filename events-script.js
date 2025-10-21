@@ -9,7 +9,7 @@
                 location: "center",
                 date: "2026-10-12",
                 price: "26€",
-                image: "image/IMG_0907.WEBP",
+                image: "IMG_0907.WEBP",
                 status: "today"
             },
             {
@@ -20,7 +20,7 @@
                 location: "salou",
                 date: "2026-07-05",
                 price: "22€",
-                image: "image/IMG_0997.jpg",
+                image: "IMG_0997.jpg",
                 status: "upcoming"
             },
             {
@@ -31,7 +31,7 @@
                 location: "gracia",
                 date: "2026-09-24",
                 price: "15€",
-                image: "image/IMG_0904.JPG",
+                image: "IMG_0904.JPG",
                 status: "upcoming"
             },
             {
@@ -42,7 +42,7 @@
                 location: "Camp Nou",
                 date: "2025-10-26",
                 price: "50€",
-                image: "image/IMG_1047.WEBP",
+                image: "IMG_1047.WEBP",
                 status: "upcoming"
             },
             {
@@ -53,7 +53,7 @@
                 location: "barceloneta",
                 date: "2026-04-21",
                 price: "20€",
-                image: "image/IMG_0971.jpg",
+                image: "IMG_0971.jpg",
                 status: "upcoming"
             },
             {
@@ -64,7 +64,7 @@
                 location: "Camp Nou",
                 date: "2026-01-2",
                 price: "28€",
-                image: "image/IMG_E0920.jpg",
+                image: "IMG_E0920.jpg",
                 status: "upcoming"
             },
             {
@@ -75,7 +75,7 @@
                 location: "garcia",
                 date: "2026-01-2",
                 price: "30€",
-                image: "image/IMG_0913.WEBP",
+                image: "IMG_0913.WEBP",
                 status: "past"
             },
             {
@@ -86,7 +86,7 @@
                 location: "center",
                 date: "2025-10-10",
                 price: "14€",
-                image: "image/IMG_1048.jpg",
+                image: "IMG_1048.jpg",
                 status: "past"
             },
             {
@@ -97,7 +97,7 @@
                 location: "Seotadella",
                 date: "2026-04-31",
                 price: "مجاني",
-                image: "image/IMG_E0915.jpg",
+                image: "IMG_E0915.jpg",
                 status: "past"
             }
         ];
