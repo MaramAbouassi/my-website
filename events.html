@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جميع الفعاليات - دليل فعاليات برشلونة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/events_styles.css">
+</head>
+
+<body>
+    <!-- رأس الصفحة -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-city fa-2x"></i>
+                    <h1>دليل فعاليات برشلونة</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                    <li><a href="events.html" class="active"><i class="fas fa-calendar-alt"></i> الفعاليات</a></li>
+                    <li><a href="event.html"><i class="fas fa-envelope"></i> التفاصيل </a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> عن الدليل</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- إحصائيات الفعاليات -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="total-events">9</div>
+                    <div class="stat-label">إجمالي الفعاليات</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="upcoming-events">8</div>
+                    <div class="stat-label">فعاليات قادمة</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="past-events">1</div>
+                    <div class="stat-label">فعاليات منتهية</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="displayed-events">9</div>
+                    <div class="stat-label">النتائج المعروضة</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- محتوى الصفحة -->
+    <div class="container">
+        <!-- شريط البحث والتصفية المتقدم -->
+        <section class="filters-section">
+            <form id="filters-form">
+                <div class="search-box">
+                    <input type="text" class="search-input" id="search-input"
+                        placeholder="ابحث عن فعالية، مكان، أو كلمة مفتاحية...">
+                    <button type="button" class="search-btn" id="search-btn">
+                        <i class="fas fa-search"></i> بحث
+                    </button>
+                </div>
+
+                <div class="filter-options">
+                    <div class="filter-group">
+                        <label for="category">التصنيف</label>
+                        <select class="filter-select" id="category">
+                            <option value="all">جميع التصنيفات</option>
+                            <option value="culture">ثقافة</option>
+                            <option value="sports">رياضة</option>
+                            <option value="music">موسيقى</option>
+                            <option value="food">طعام</option>
+                            <option value="family">عائلي</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="location">الموقع</label>
+                        <select class="filter-select" id="location">
+                            <option value="all">جميع المواقع</option>
+                            <option value="center">وسط المدينة</option>
+                            <option value="Camp Nou">الكامب نو</option>
+                            <option value="gracia">غراسيا</option>
+                            <option value="barceloneta">بارسلونيتا</option>
+                            <option value="salou">سالو,جنوب كاتالونيا</option>
+                            <option value="barcelona">تحت القصر الوطني</option>
+                            <option value="Seotadella">حديقة سيوتاديلا</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="date">التاريخ</label>
+                        <select class="filter-select" id="date">
+                            <option value="all">جميع التواريخ</option>
+                            <option value="today">اليوم</option>
+                            <option value="week">هذا الأسبوع</option>
+                            <option value="month">هذا الشهر</option>
+                            <option value="upcoming">القادم قريبًا</option>
+                            <option value="past">فعاليات منتهية</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="sort">ترتيب النتائج</label>
+                        <select class="filter-select" id="sort">
+                            <option value="date_asc">الأقدم أولاً</option>
+                            <option value="date_desc">الأحدث أولاً</option>
+                            <option value="title_asc">حسب العنوان (أ-ي)</option>
+                            <option value="title_desc">حسب العنوان (ي-أ)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="filter-actions">
+                    <div class="results-count" id="results-count">
+                        عرض 6 من أصل 9 فعالية
+                    </div>
+                    <button type="button" class="reset-btn" id="reset-btn">
+                        <i class="fas fa-redo"></i> إعادة تعيين الفلاتر
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <!-- عناصر التحكم في العرض -->
+        <div class="view-controls">
+            <div class="view-options">
+                <button class="view-btn active" data-view="grid">
+                    <i class="fas fa-th"></i> عرض الشبكة
+                </button>
+                <button class="view-btn" data-view="list">
+                    <i class="fas fa-list"></i> عرض القائمة
+                </button>
+            </div>
+            <div class="sort-options">
+                <label for="quick-sort">ترتيب سريع:</label>
+                <select class="sort-select" id="quick-sort">
+                    <option value="date_asc">الأقدم أولاً</option>
+                    <option value="date_desc">الأحدث أولاً</option>
+                    <option value="title_asc">حسب العنوان (أ-ي)</option>
+                    <option value="title_desc">حسب العنوان (ي-أ)</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- شبكة الفعاليات -->
+        <section class="events-section">
+            <h2 class="section-title">جميع الفعاليات</h2>
+
+            <!-- عرض الشبكة -->
+            <div class="events-grid" id="grid-view">
+                <!-- سيتم ملؤها بالبيانات -->
+            </div>
+
+            <!-- عرض القائمة -->
+            <div class="events-list" id="list-view">
+                <!-- سيتم ملؤها بالبيانات -->
+            </div>
+        </section>
+    </div>
+
+    <!-- التذييل -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>عن الدليل</h3>
+                    <p>دليل فعاليات برشلونة هو منصة شاملة للتعرف على جميع الفعاليات والأنشطة في مدينة برشلونة الجميلة.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-angle-left"></i> الرئيسية</a></li>
+                        <li><a href="events.html"><i class="fas fa-angle-left"></i> جميع الفعاليات</a></li>
+                        <li><a href="events.html?date=week"><i class="fas fa-angle-left"></i> فعاليات هذا الأسبوع</a>
+                        </li>
+                        <li><a href="admin.html"><i class="fas fa-angle-left"></i> تسجيل فعالية جديدة</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>معلومات التواصل</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> برشلونة، إسبانيا</p>
+                    <p><i class="fas fa-phone"></i> +34 123 456 789</p>
+                    <p><i class="fas fa-envelope"></i> info@barcelona-events.com</p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>© 2025 دليل فعاليات برشلونة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/events-script.js"></script>
+</body>
+
+</html>
