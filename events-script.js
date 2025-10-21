@@ -64,7 +64,7 @@
                 location: "Camp Nou",
                 date: "2026-01-2",
                 price: "28€",
-                image: "IMG_E0920.jpg",
+                image: "IMG_0919.jpg",
                 status: "upcoming"
             },
             {
@@ -442,3 +442,4 @@
             // جعل resetFilters متاحة globally
             window.resetFilters = resetFilters;
         });
+
