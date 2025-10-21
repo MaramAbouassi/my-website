@@ -1,5 +1,5 @@
 body {
-    background-image: url(../image/IMG_0945.WEBP);
+    background-image: url(IMG_0945.WEBP);
     backdrop-filter: blur(2px);
 }
 
@@ -481,4 +481,5 @@ footer {
     border-color: rgb(98, 201, 233);
     background: #fff;
     box-shadow: 0 0 8px blue;
+
 }
