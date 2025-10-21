@@ -1,6 +1,6 @@
 /* تنسيقات عامة */
 body {
-    background-image: url(../image/IMG_0945.WEBP);
+    background-image: url(IMG_0945.WEBP);
     backdrop-filter: blur(2px);
 }
 
@@ -715,4 +715,5 @@ footer {
     .stats-grid {
         grid-template-columns: 1fr;
     }
+
 }
