@@ -20,7 +20,7 @@
                 location: "salou",
                 date: "2026-07-05",
                 price: "22€",
-                image: "IMG_0997.jpg",
+                image: "IMG_0997.JPG",
                 status: "upcoming"
             },
             {
@@ -53,7 +53,7 @@
                 location: "barceloneta",
                 date: "2026-04-21",
                 price: "20€",
-                image: "IMG_0971.jpg",
+                image: "IMG_0971.JPG",
                 status: "upcoming"
             },
             {
@@ -64,7 +64,7 @@
                 location: "Camp Nou",
                 date: "2026-01-2",
                 price: "28€",
-                image: "IMG_0919.jpg",
+                image: "IMG_0919.JPG",
                 status: "upcoming"
             },
             {
@@ -86,7 +86,7 @@
                 location: "center",
                 date: "2025-10-10",
                 price: "14€",
-                image: "IMG_1048.jpg",
+                image: "IMG_1048.JPG",
                 status: "past"
             },
             {
@@ -97,7 +97,7 @@
                 location: "Seotadella",
                 date: "2026-04-31",
                 price: "مجاني",
-                image: "IMG_E0915.jpg",
+                image: "IMG_E0915.JPG",
                 status: "past"
             }
         ];
@@ -442,4 +442,5 @@
             // جعل resetFilters متاحة globally
             window.resetFilters = resetFilters;
         });
+
 
